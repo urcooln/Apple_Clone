@@ -136,7 +136,7 @@ nav li {
   vertical-align: top;
   height: 44px;
   text-align: center;
-  width: 9%;
+  width: 10%;
 }
 nav a {
   display: inline-block;
@@ -272,8 +272,9 @@ footer > .container{
 }
 .footer-help {
   color: #999;
-  padding-top: 300px;
+  /*padding-top: 300px;*/
   padding-bottom: 24px;
+  clear: both;
 }
 .footer-help > p:first-child {
   border-bottom: 1px solid #e3e3e3;
