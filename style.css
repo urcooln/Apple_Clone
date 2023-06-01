@@ -70,3 +70,263 @@ table {
   *zoom: 1;
 }
 /*               End of Setup             */
+
+;
+/*                  Font                  */
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_bold.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_semibold.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_medium.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_text.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_thin.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_ultralight.ttf") format("truetype");
+  font-weight: 100;
+}
+body {
+  font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 18px;
+  line-height: 1.45;
+  font-weight: 400;
+  letter-spacing: normal;
+  color: #333;
+}
+h1 {
+  font-size: 3em;
+}
+h2 {
+  font-size: 1.5em;
+}
+
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+nav {
+  background: rgba(0,0,0,0.8);
+  height: 44px;
+}
+nav ul {
+  height: 44px;
+}
+nav li {
+  display: inline-block;
+  vertical-align: top;
+  height: 44px;
+  text-align: center;
+  width: 9%;
+}
+nav a {
+  display: inline-block;
+  padding: 0 10px;
+  text-decoration: none;
+  color: #fff;
+}
+.nav-link {
+  background-origin: content-box;
+  opacity: 1;
+  height: 44px;
+}
+.nav-link:hover {
+  opacity: 0.65;
+  -webkit-transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.hero{
+  margin-top: 10px;
+}
+#product-img{
+  background: url(./images/Apple-iPhone-14-Pro-iPhone-14-Pro-Max-hero-220907_Full-Bleed-Image.jpg.large.jpg) no-repeat;
+  background-position: center center;
+  height: 800px;
+  margin-top:-200px;
+}
+
+#product-info{
+  margin-top: 40px;
+  text-align: center;
+}
+
+#product-name{
+  font-size: 60px;
+  font-weight: 600;
+}
+
+#product-links{
+  text-align: center;
+}
+#product-links > li{
+  display: inline-block;
+  font-size: 25px;
+  font-weight: 300;
+  margin: 0 10px 12px;
+}
+#product-links >li>a{
+  color: #08c;
+  text-decoration: none;
+}
+#product-links > li > a:hover {
+  color: rgb(60, 107, 132);
+  text-decoration: underline;
+}
+.sub-hero{
+  margin-top: 16px;
+}
+.hero-sub-images{
+  height: 200px;
+  background-size: 640px 200px;
+  border-right: 2px solid #fff;
+
+}
+.col-3{
+  width: 25%;
+  float: left;
+  box-sizing: border-box;
+  padding: 10px;
+}
+#hero-sub-watch{
+  background: url(images/watch_large.jpg) center center no-repeat;
+}
+#hero-sub-ipad{
+  background: url(images/ipad_pro_large.jpg) center center no-repeat;
+}
+#hero-sub-access{
+  background: url(images/accessories_large.jpg) center center no-repeat;
+}
+#hero-sub-macbook{
+  background: url(images/macbook_large.jpg) center center no-repeat;
+}
+#exchange{
+  text-align: center;
+  padding: 20px;
+  
+}
+#exchange > a{
+  color: #08c;
+  text-decoration: none;
+}
+#exchange >a:hover{
+  color: rgb(60, 107, 132);
+  text-decoration: underline;
+}
+footer{
+  background-color: #f2f2f2;
+  font-size: 12px;
+  line-height: 1.6667;
+  font-weight: 400;
+  letter-spacing: -0.01px;
+  color: #666
+}
+footer > .container{
+  padding: 0 22px;
+}
+
+  .col-2 {
+    width: 20%;
+    float: left;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.footer-nav {
+  padding-top: 20px;
+}
+/*The :first-child is a CSS pseudo-class that selects and targets the first child element of its parent element. It is used to apply specific styles or rules to the first child element within a container. Here's an example to illustrate its usage:*/ 
+
+.footer-nav ul:not(:first-child) {
+  padding-top: 20px;
+}
+.footer-nav ul > li:first-child {
+  font-weight: 600;
+  color: #333;
+}
+.footer-nav ul > li:not(:first-child) > a {
+  text-decoration: none;
+  color: #666;
+}
+.footer-nav ul > li:not(:first-child) > a:hover {
+  text-decoration: underline;
+  color: #333;
+}
+.footer-help {
+  color: #999;
+  padding-top: 300px;
+  padding-bottom: 24px;
+}
+.footer-help > p:first-child {
+  border-bottom: 1px solid #e3e3e3;
+  margin-bottom: 6px;
+  padding-bottom: 5px;
+}
+.footer-help > p:first-child > a {
+  color: #08c;
+  text-decoration: none;
+}
+.footer-help > p:first-child > a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+.footer-help > div {
+  display: inline-block;
+  vertical-align: top;
+}
+#legal {
+  margin-right: 22px;
+}
+#legal-links > a {
+  color: #666;
+  text-decoration: none;
+}
+#legal-links > a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+#legal-links > a:not(:last-child) {
+  border-right: 1px solid #d6d6d6;
+  margin-right: 10px;
+  padding-right: 12px;
+}
+#locale {
+  float: right;
+}
+#locale > a {
+  vertical-align: top;
+  display: inline-block;
+  color: #666;
+  text-decoration: none;
+}
+#locale > a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+#locale-flag {
+  display: inline-block;
+  height: 16px;
+  width: 21px;
+  background: url(images/usa.png) 3px 0 no-repeat;
+  background-size: 16px 16px;
+  margin-top: 1px;
+  padding-right: 1px;
+}
